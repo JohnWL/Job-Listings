@@ -1,0 +1,8 @@
+<h1><%= @jobs.title %></h1>
+<p><%= @jobs.description %></p>
+<p><%= @jobs.company %></p>
+
+<%= link_to "Home", root_path %>
+<%= link_to "Edit Job", edit_job_path(@jobs) %>
+<%= link_to "Remove Job", job_path(@jobs), method: :delete,
+                          data: { confirm: "Are you sure?" } %>

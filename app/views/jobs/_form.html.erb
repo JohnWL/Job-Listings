@@ -1,0 +1,10 @@
+<div class="form">
+  <%= simple_form_for(@jobs) do |f| %>
+    <%= f.input :title, label: "Job Title" %>
+    <%= f.input :description, label: "Job Description" %>
+    <%= f.input :company, label: "Company" %>
+    <%= f.input :url, label: "Link to Job" %>
+    <br>
+    <%= f.button :submit %>
+  <% end %>
+</div>

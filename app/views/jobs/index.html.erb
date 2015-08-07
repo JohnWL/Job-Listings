@@ -1,0 +1,6 @@
+<% @jobs.each do |j| %>
+  <h2><%= link_to j.title, j %></h2>
+  <p><%= j.company %></p>
+<% end %>
+
+<%= link_to "Add Job", new_job_path %>
