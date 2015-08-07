@@ -1,5 +1,7 @@
 <div class="form">
   <%= simple_form_for(@jobs) do |f| %>
+    <%= f.collection_select :category_id, Category.all, :id, :name,
+                            { prompt: "Choose Category" } %>
     <%= f.input :title, label: "Job Title" %>
     <%= f.input :description, label: "Job Description" %>
     <%= f.input :company, label: "Company" %>
