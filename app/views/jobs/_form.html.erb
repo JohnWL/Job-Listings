@@ -1,11 +1,11 @@
-<div class="form">
+<div class="form-horizontal">
   <%= simple_form_for(@jobs) do |f| %>
     <%= f.collection_select :category_id, Category.all, :id, :name,
                             { prompt: "Choose Category" } %>
     <%= f.input :title, label: "Job Title" %>
     <%= f.input :description, label: "Job Description" %>
     <%= f.input :company, label: "Company" %>
-    <%= f.input :url, label: "Link to Job" %>
+    <%= f.input :url, label: "URL Link to Job" %>
     <br>
     <%= f.button :submit %>
   <% end %>

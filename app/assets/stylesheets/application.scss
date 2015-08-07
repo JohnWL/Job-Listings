@@ -16,3 +16,81 @@
  
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	height: 100%;
+  background: -webkit-linear-gradient(90deg, #f84646 10%, #fb6363 90%);
+  background:    -moz-linear-gradient(90deg, #f84646 10%, #fb6363 90%);
+  background:     -ms-linear-gradient(90deg, #f84646 10%, #fb6363 90%);
+  background:      -o-linear-gradient(90deg, #f84646 10%, #fb6363 90%);
+  background:         linear-gradient(90deg, #f84646 10%, #fb6363 90%);
+  font-family: 'Lato', sans-serif;
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.navbar-default {
+	background-color: white;
+	border-radius: 0;
+	height: 80px;
+	padding: 15px 0;
+	border: none;
+}
+
+.navbar-brand {
+	text-transform: uppercase;
+	letter-spacing: -1px;
+	font-size: 2em;
+	font-weight: 300;
+	color: #fb3838 !important;
+}
+
+#jobs {
+	.job {
+		padding: 1em 0;
+		border-bottom: 1px solid rgba(250,250,250, 0.5);
+		h2 {
+			font-size: 2.5em;
+			font-weight: 300;
+			margin-bottom: 0;
+			color: white;
+			a {
+				color: white;
+			}
+		}
+		p {
+			color: #f3f3f3;
+		}
+	}
+}
+
+#links {
+	margin-top: 2em;
+}
+
+.navbar-text
+	a {
+  color: #ff2e2e;
+  text-decoration: none;
+
+  &:hover {
+    color: #c50000;
+    text-decoration: blink;
+  }
+}
